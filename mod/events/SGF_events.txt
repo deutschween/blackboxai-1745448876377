@@ -1,0 +1,88 @@
+add_namespace = sgf
+
+# Superevent for capturing Berlin
+country_event = {
+	id = sgf.1
+	title = sgf.1.t
+	desc = sgf.1.d
+	picture = GFX_report_event_german_reichstag_gathering
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					GER = { exists = yes }
+				}
+				GER = { country_event = { id = sgf.2 days = 1 } }
+			}
+		}
+	}
+	
+	option = {
+		name = sgf.1.a
+		add_political_power = 100
+		add_stability = 0.1
+		add_war_support = 0.1
+		set_country_flag = SGF_berlin_captured
+	}
+}
+
+# Event for German surrender
+country_event = {
+	id = sgf.2
+	title = sgf.2.t
+	desc = sgf.2.d
+	picture = GFX_report_event_german_surrender
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sgf.2.a
+		SGF = {
+			white_peace = GER
+		}
+		every_state = {
+			limit = {
+				is_core_of = GER
+				NOT = { is_core_of = SGF }
+			}
+			SGF = { transfer_state = PREV }
+		}
+		if = {
+			limit = {
+				SGF = {
+					has_country_flag = SGF_berlin_captured
+				}
+			}
+			country_event = { id = sgf.3 days = 1 }
+		}
+	}
+}
+
+# Superevent for German surrender
+news_event = {
+	id = sgf.3
+	title = sgf.3.t
+	desc = sgf.3.d
+	picture = GFX_news_event_german_surrender
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = sgf.3.a
+		trigger = {
+			tag = SGF
+		}
+	}
+	
+	option = {
+		name = sgf.3.b
+		trigger = {
+			NOT = { tag = SGF }
+			NOT = { tag = GER }
+		}
+	}
+}
