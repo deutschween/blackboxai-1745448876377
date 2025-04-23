@@ -1,0 +1,45 @@
+l_english:
+ # Country name
+ SGF:0 "South German Federation"
+ SGF_DEF:0 "The South German Federation"
+ SGF_ADJ:0 "South German"
+
+ # Leader descriptions
+ POLITICS_LUDWIG_VON_BAYERN_DESC:0 "Ludwig von Bayern, a descendant of the Bavarian royal family, leads the newly formed South German Federation with a vision of uniting all German lands under southern leadership."
+
+ # Focus Tree
+ south_german_focus:0 "South German Focus Tree"
+ SGF_assert_independence:0 "Assert Independence"
+ SGF_assert_independence_desc:0 "We must establish ourselves as an independent power in Central Europe."
+ 
+ SGF_industrial_effort:0 "Industrial Development"
+ SGF_industrial_effort_desc:0 "Our industry must be expanded to support our ambitions."
+ 
+ SGF_military_expansion:0 "Military Expansion"
+ SGF_military_expansion_desc:0 "A strong military is essential for our survival and expansion."
+ 
+ SGF_modernize_army:0 "Modernize the Army"
+ SGF_modernize_army_desc:0 "Our forces must be equipped with the latest military doctrine and technology."
+ 
+ SGF_expand_infrastructure:0 "Expand Infrastructure"
+ SGF_expand_infrastructure_desc:0 "A modern nation requires modern infrastructure."
+ 
+ SGF_northern_ambition:0 "Northern Ambition"
+ SGF_northern_ambition_desc:0 "The time has come to look northward and prepare for our destiny."
+ 
+ SGF_seize_berlin:0 "Seize Berlin"
+ SGF_seize_berlin_desc:0 "Berlin must fall for Germany to be united under our banner."
+
+ # Events
+ sgf.1.t:0 "The Fall of Berlin"
+ sgf.1.d:0 "Our forces have achieved a historic victory by capturing Berlin, the heart of northern Germany. The streets echo with the sound of our troops' victory march, and the South German flag now flies over the Reichstag. This marks a crucial step towards our goal of German unification under South German leadership."
+ sgf.1.a:0 "A glorious day for South Germany!"
+
+ sgf.2.t:0 "The End of Northern Resistance"
+ sgf.2.d:0 "With Berlin fallen and our forces scattered, we can no longer maintain effective resistance against the South German advance. The dream of a united Germany will continue - but under different leadership."
+ sgf.2.a:0 "We have no choice but to surrender."
+
+ sgf.3.t:0 "§RThe South German Victory§!"
+ sgf.3.d:0 "In a dramatic turn of events that has shocked the world, the South German Federation has achieved what many thought impossible. With the capture of Berlin and the surrender of the German government, a new power has emerged in Central Europe. The South German Federation now stands as the dominant German state, their victory marking a fundamental shift in the balance of power.\n\nAs South German troops parade through the streets of Berlin, the world watches with bated breath to see what this new German power will do with its victory. Will this lead to a more stable Europe, or is this just the beginning of a new era of German ambitions?"
+ sgf.3.a:0 "Germany is finally united under South German leadership!"
+ sgf.3.b:0 "Troubling developments in Central Europe..."
