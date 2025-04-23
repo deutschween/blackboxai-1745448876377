@@ -1,0 +1,55 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_news_event_german_surrender"
+		texturefile = "gfx/event_pictures/news_event_german_surrender.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_german_reichstag_gathering"
+		texturefile = "gfx/event_pictures/report_event_german_reichstag_gathering.dds"
+	}
+}
+
+# Superevent window
+containerWindowType = {
+	name = "sgf_superevent_window"
+	position = { x = -225 y = -225 }
+	size = { width = 450 height = 450 }
+	orientation = center
+	moveable = yes
+	
+	background = {
+		name = "Background"
+		quadTextureSprite = "GFX_tiled_window_thin_border2"
+	}
+	
+	instantTextBoxType = {
+		name = "Title"
+		position = { x = 0 y = 15 }
+		font = "hoi_36header"
+		text = "[GetSuperEventTitle]"
+		maxWidth = 450
+		maxHeight = 36
+		format = center
+	}
+	
+	instantTextBoxType = {
+		name = "Description"
+		position = { x = 25 y = 75 }
+		font = "hoi_18mbs"
+		text = "[GetSuperEventDesc]"
+		maxWidth = 400
+		maxHeight = 350
+		format = center
+	}
+	
+	buttonType = {
+		name = "close_button"
+		position = { x = 175 y = 375 }
+		quadTextureSprite = "GFX_button_123x34"
+		buttonText = "[GetSuperEventOption]"
+		buttonFont = "hoi_18mbs"
+		shortcut = "ESCAPE"
+		clicksound = click_default
+	}
+}
