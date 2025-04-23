@@ -1,0 +1,96 @@
+# State ID 52 - Munich/Oberbayern
+state={
+	id=52
+	name="STATE_52"
+	manpower = 1453365
+	state_category = metropolis
+	
+	history={
+		owner = SGF
+		victory_points = {
+			6995 20 #Munich
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 3
+			industrial_complex = 2
+			air_base = 6
+		}
+		add_core_of = SGF
+	}
+	provinces={
+		532 571 586 3299 3541 3571 6571 6583 6995 9515 9681 11497 
+	}
+}
+
+# State ID 50 - Baden/Württemberg
+state={
+	id=50
+	name="STATE_50"
+	manpower = 5086854
+	state_category = large_city
+	
+	history={
+		owner = SGF
+		victory_points = {
+			692 5 #Stuttgart
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 2
+			arms_factory = 2
+		}
+		add_core_of = SGF
+	}
+	provinces={
+		692 707 708 3688 3705 6540 6693 9652 9666 11620 11638 11653 
+	}
+}
+
+# State ID 51 - Franconia
+state={
+	id=51
+	name="STATE_51"
+	manpower = 2104366
+	state_category = city
+	
+	history={
+		owner = SGF
+		victory_points = {
+			11544 5 #Nuremberg
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		add_core_of = SGF
+	}
+	provinces={
+		561 3474 3572 6421 6594 9416 9557 9572 11404 11544 11560 
+	}
+}
+
+# State ID 53 - Upper Austria
+state={
+	id=53
+	name="STATE_53"
+	manpower = 2275377
+	state_category = city
+	
+	history={
+		owner = SGF
+		victory_points = {
+			688 5 #Augsburg
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		add_core_of = SGF
+	}
+	provinces={
+		688 3673 3675 3690 6521 6691 9638 9650 9665 11618 11635 
+	}
+}
